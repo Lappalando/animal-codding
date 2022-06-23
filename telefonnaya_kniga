@@ -1,0 +1,31 @@
+name = 0
+number = 0
+i = 0
+zk_name=['']
+zk_number=['']
+print("Телефонная книга пуста")
+
+print('Пока хз как это исправить. Если сейчас или после ввода имени и номера нажать Enter, прога закончится, это збс, но нужно что-то вводить, чтобы прога работала')
+while input() != '':
+    print('Введите имя:')
+    zk_name.insert(name, input())
+    print('Введите номер:')
+    zk_number.insert(number, input())
+    print(zk_name[name], zk_number[number])
+    name = name+1
+    number = number+1
+    if name != 0:
+        print("Размер телефонной книг:,", name)
+    else:
+        if number != 0:
+            print("Размер телефонной книги:", number)
+        else:
+            print("Телефонная книга пуста")
+
+if name or number != 0:
+    while i <= name:
+        print(zk_name[i], zk_number[i], end='\n')
+        i = i+1
+else:
+    print('Занятных слотов нет')
+    
